@@ -18,7 +18,7 @@ public class HelloController {
     @RequestMapping("restart")
     @ResponseBody
     public String restart() {
-        System.out.println("热部署2");
+        System.out.println("热部署0");
         return restart;
     }
 }
