@@ -6,9 +6,6 @@
     <groupId>cn.wolfcode</groupId>
     <artifactId>whole</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>manage</module>
-    </modules>
 
     <packaging>pom</packaging>
 </project>
