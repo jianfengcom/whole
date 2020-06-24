@@ -23,6 +23,12 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+        <!-- devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+
         <!-- RequestMapping -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
