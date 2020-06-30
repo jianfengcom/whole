@@ -12,3 +12,14 @@ versionInformation.signatureMD5 - 非必填
 versionInformation.signatureSHA1 - 非必填
 versionInformation.releaseNote - 非必填
 versionInformation.appIconBase64
+
+
+firstOnlineTime
+appFileSizeKb  "minimum": 0
+downloadUrl  "format": "uri-template"
+onlineStatus
+
+appIconUrl
+screenshots
+onlineTime
+offlineTime
