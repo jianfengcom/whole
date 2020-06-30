@@ -1,3 +1,14 @@
 appId - 已弃用
 identifier
 appLicense - 非必填
+appName
+appCategory
+appCategoryId
+appDescription
+developerInformation.name
+versionInformation.versionCode
+versionInformation.versionName
+versionInformation.signatureMD5 - 非必填
+versionInformation.signatureSHA1 - 非必填
+versionInformation.releaseNote - 非必填
+versionInformation.appIconBase64
