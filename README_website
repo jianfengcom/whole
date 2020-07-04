@@ -15,3 +15,10 @@
 5. ajax
     关键字: 网络请求不成功
 
+6. SpringMVC 请求转发的三种方法
+    关键字: return "forward:; request.getRequestDispatcher
+
+7. SpringMVC 重定向
+    关键字: redirect:
+
+8. html与jsp区别
