@@ -27,6 +27,8 @@ public class HelloController {
 
     @RequestMapping("request")
     public void request(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        // 当使用请求转发时，新的servlet的requset和resp是来自于上一个的servlet的requset和resp
+        request.setAttribute("msg", "今天也要加油鸭");
         request.getRequestDispatcher("/WEB-INF/jsp/forwardView.jsp").forward(request, response);
     }
 
