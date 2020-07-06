@@ -66,13 +66,13 @@ languageId_4982214: 77
 copyright_4982214: 82
 intro_4982214: (unable to decode value)
 
-publisher_4982214: (unable to decode value)
+publisher_4982214: (unable to decode value) # 软件商名称（桌面）
 publisher_4982217: (unable to decode value)
 description_4982214: (unable to decode value)
 description_4982271: (unable to decode value)
 description_4982217: (unable to decode value)
-receptionTitle_4982214: (unable to decode value)
-tag_4982214: (unable to decode value)
+receptionTitle_4982214: (unable to decode value) # 前台标题（桌面）
+tag_4982214: (unable to decode value) # tag（桌面）
 
 editorContent_4982217:
 editorContent_4982214:

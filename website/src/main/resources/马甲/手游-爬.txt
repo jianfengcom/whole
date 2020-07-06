@@ -74,11 +74,11 @@ description_4979630: (unable to decode value)
 receptionTitle_4979628: (unable to decode value)
 tag_4979628: (unable to decode value)
 
-otherSideId_4979628: 1337885
+otherSideId_4979628: 1337885 # 关联软件安卓id（桌面）
 otherSideId_4979629: 2768780
-privacyRights_4979629: (unable to decode value)
+privacyRights_4979629: (unable to decode value) # 权限列表（桌面）
 privacyRights_4979628: (unable to decode value)
-bigType:
-orderBy:
+bigType: # 大类（桌面）
+orderBy: # 排序（桌面）
 
 
