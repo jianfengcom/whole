@@ -1,0 +1,68 @@
+纸搬客
+admin/batchAndroidClientMasterSpider.do
+
+name: 
+recordType: 1
+begin: 
+end: 
+pageNo: 1
+owerId: 0
+apkStatus: -1
+siteType: -1
+pageSize: 3
+blackKeyword: -1
+scanStatus: -1
+siteType_4982271: 0
+id: 4982271
+todo4982271: modify
+recordType_4982271: 1
+name_4982271: (unable to decode value)
+alias_4982271: (unable to decode value)
+logo_4982271: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/06/c7/218631649_1594008283927.png
+bigTypeId_4982271: 1402
+smallTypeId_4982271: 1465
+languageId_4982271: 77
+copyright_4982271: 82
+intro_4982271: (unable to decode value)
+receptionTitle_4982271: (unable to decode value)
+tag_4982271: (unable to decode value)
+editorContent_4982271: 
+publisher_4982271: (unable to decode value)
+siteType_4982217: 32
+id: 4982217
+todo4982217: none
+recordType_4982217: 1
+name_4982217: (unable to decode value)
+alias_4982217: (unable to decode value)
+logo_4982217: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/06/c4/218624837_1594006443752.png
+bigTypeId_4982217: 1402
+smallTypeId_4982217: 1456
+languageId_4982217: 77
+copyright_4982217: 82
+intro_4982217: (unable to decode value)
+receptionTitle_4982217: (unable to decode value)
+tag_4982217: (unable to decode value)
+editorContent_4982217: 
+publisher_4982217: (unable to decode value)
+siteType_4982214: 32
+id: 4982214
+todo4982214: none
+recordType_4982214: 1
+name_4982214: (unable to decode value)
+alias_4982214: (unable to decode value)
+logo_4982214: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/06/c4/218624693_1594006386080.png
+bigTypeId_4982214: 1402
+smallTypeId_4982214: 1456
+languageId_4982214: 77
+copyright_4982214: 82
+intro_4982214: (unable to decode value)
+receptionTitle_4982214: (unable to decode value)
+tag_4982214: (unable to decode value)
+editorContent_4982214: 
+publisher_4982214: (unable to decode value)
+updateRemark_4982214: (unable to decode value)
+description_4982214: (unable to decode value)
+updateRemark_4982217: (unable to decode value)
+description_4982271: (unable to decode value)
+description_4982217: (unable to decode value)
+updateRemark_4982271: (unable to decode value)

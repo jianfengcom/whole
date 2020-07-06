@@ -1,0 +1,69 @@
+纸搬客
+admin/batchPhoneGamePCClientMasterSpider.do
+
+name: 
+recordType: 
+begin: 
+end: 
+pageNo: 1
+owerId: 
+apkStatus: 
+siteType: 
+pageSize: 
+bigType: 
+orderBy: 
+blackKeyword: 
+siteType_4979630: 29
+id: 4979630
+todo4979630: modify
+recordType_4979630: 1
+name_4979630: (unable to decode value)
+alias_4979630: (unable to decode value)
+otherSideId_4979630: 2798673
+logo_4979630: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/06/c7/218631649_1594008283927.png
+bigTypeId_4979630: 2361
+smallTypeId_4979630: 2383
+languageId_4979630: 77
+copyright_4979630: 82
+intro_4979630: (unable to decode value)
+receptionTitle_4979630: (unable to decode value)
+tag_4979630: (unable to decode value)
+privacyRights_4979630: 
+publisher_4979630: (unable to decode value)
+siteType_4979629: 29
+id: 4979629
+todo4979629: none
+recordType_4979629: 1
+name_4979629: (unable to decode value)
+alias_4979629: (unable to decode value)
+otherSideId_4979629: 2768780
+logo_4979629: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/03/c3/218043276_1593737095392.png
+bigTypeId_4979629: 2361
+smallTypeId_4979629: 2383
+languageId_4979629: 77
+copyright_4979629: 82
+intro_4979629: (unable to decode value)
+receptionTitle_4979629: (unable to decode value)
+tag_4979629: (unable to decode value)
+privacyRights_4979629: (unable to decode value)
+publisher_4979629: (unable to decode value)
+siteType_4979628: 29
+id: 4979628
+todo4979628: none
+recordType_4979628: 1
+name_4979628: (unable to decode value)
+alias_4979628: (unable to decode value)
+otherSideId_4979628: 1337885
+logo_4979628: //img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/03/c5/218072884_1593745202655.png
+bigTypeId_4979628: 2361
+smallTypeId_4979628: 2383
+languageId_4979628: 77
+copyright_4979628: 82
+intro_4979628: (unable to decode value)
+receptionTitle_4979628: (unable to decode value)
+tag_4979628: (unable to decode value)
+privacyRights_4979628: (unable to decode value)
+publisher_4979628: (unable to decode value)
+description_4979628: (unable to decode value)
+description_4979629: (unable to decode value)
+description_4979630: (unable to decode value)
