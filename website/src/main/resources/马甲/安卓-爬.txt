@@ -74,8 +74,8 @@ description_4982217: (unable to decode value)
 receptionTitle_4982214: (unable to decode value) # 前台标题（桌面）
 tag_4982214: (unable to decode value) # tag（桌面）
 
-editorContent_4982217:
+editorContent_4982217: # 小编点评
 editorContent_4982214:
-updateRemark_4982217: (unable to decode value)
+updateRemark_4982217: (unable to decode value) # 更新说明
 updateRemark_4982214: (unable to decode value)
 updateRemark_4982271: (unable to decode value)
