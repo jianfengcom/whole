@@ -1,0 +1,340 @@
+[2020-07-21 12:26:46.927] 2020-07-21 12:26:46,922 [resin-destroy] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springmvc-servlet': startup date [Tue Jul 21 10:47:50 CST 2020]; parent: Root WebApplicationContext
+[2020-07-21 12:26:46.940] 2020-07-21 12:26:46,940 [resin-destroy] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Jul 21 10:47:45 CST 2020]; root of context hierarchy
+[2020-07-21 12:26:46.993] 2020-07-21 12:26:46,993 [resin-destroy] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+[2020-07-21 12:27:04.300] 2020-07-21 12:27:04,299 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+[2020-07-21 12:27:04.515] 2020-07-21 12:27:04,515 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Jul 21 12:27:04 CST 2020]; root of context hierarchy
+[2020-07-21 12:27:04.608] 2020-07-21 12:27:04,608 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+[2020-07-21 12:27:06.318] 2020-07-21 12:27:06,317 [main] INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from URL [file:/data/pc-config/pcdlc_spider.properties]
+[2020-07-21 12:27:06.853] 2020-07-21 12:27:06,853 [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@788fcafb: startup date [Tue Jul 21 12:27:06 CST 2020]; root of context hierarchy
+[2020-07-21 12:27:06.855] 2020-07-21 12:27:06,855 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+[2020-07-21 12:27:07.066] 2020-07-21 12:27:07,066 [main] INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from URL [file:/data/pc-config/pcdlc_spider.properties]
+[2020-07-21 12:27:08.295] 2020-07-21 12:27:08,295 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2020-07-21 12:27:09.695] 2020-07-21 12:27:09,694 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+[2020-07-21 12:27:09.881] 2020-07-21 12:27:09,881 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5581 ms
+[2020-07-21 12:27:09.944] 2020-07-21 12:27:09,944 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'springmvc': initialization started
+[2020-07-21 12:27:09.953] 2020-07-21 12:27:09,952 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springmvc-servlet': startup date [Tue Jul 21 12:27:09 CST 2020]; parent: Root WebApplicationContext
+[2020-07-21 12:27:09.955] 2020-07-21 12:27:09,955 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-mvc.xml]
+[2020-07-21 12:27:10.635] 2020-07-21 12:27:10,635 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/caPush/serverInfo.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.CADataPushController.serverInfo(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[2020-07-21 12:27:10.636] 2020-07-21 12:27:10,636 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/caPush/developOrgInfo.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.CADataPushController.developOrgInfo(javax.servlet.http.HttpServletResponse) throws java.io.IOException,org.apache.commons.mail.EmailException
+[2020-07-21 12:27:10.637] 2020-07-21 12:27:10,637 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/caPush/appInfo.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.CADataPushController.appInfo(javax.servlet.http.HttpServletResponse) throws java.io.IOException,org.apache.commons.mail.EmailException
+[2020-07-21 12:27:10.638] 2020-07-21 12:27:10,638 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/caPush/appJoint.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.CADataPushController.appJoint(javax.servlet.http.HttpServletResponse) throws java.io.IOException,org.apache.commons.mail.EmailException
+[2020-07-21 12:27:10.639] 2020-07-21 12:27:10,639 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/qimaiDataReceive.do],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.BrowserSpiderController.qimaiDataReceive()
+[2020-07-21 12:27:10.640] 2020-07-21 12:27:10,640 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/spider.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.pconline.framework.spider.util.ResponseResult<com.alibaba.fastjson.JSONArray> cn.pconline.pcdlc.spider.web.controller.SpiderController.spiderPc(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2020-07-21 12:27:10.642] 2020-07-21 12:27:10,641 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/testcases/download/html.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.controller.TestCasesController.downloadHtml(java.lang.String)
+[2020-07-21 12:27:10.643] 2020-07-21 12:27:10,643 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/tencentSpider.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.pconline.pcdlc.spider.responseModel.ResponseData cn.pconline.pcdlc.spider.web.controller.TencentSpiderController.tencentSpider(java.lang.String)
+[2020-07-21 12:27:10.644] 2020-07-21 12:27:10,644 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/tencentSpiderDown.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.pconline.pcdlc.spider.entity.ClientMasterSpider cn.pconline.pcdlc.spider.web.controller.TencentSpiderController.downSoft(long,java.lang.String)
+[2020-07-21 12:27:10.649] 2020-07-21 12:27:10,649 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/seoKeyWord.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.pconline.pcdlc.spider.responseModel.ResponseData cn.pconline.pcdlc.spider.web.controller.SeoKeyWordController.seoKeyWord(java.lang.String,java.lang.String)
+[2020-07-21 12:27:10.657] 2020-07-21 12:27:10,656 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/cac/buildJsonFile.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void cn.pconline.pcdlc.spider.web.controller.CACInteractController.buildJsonFile(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.io.IOException
+[2020-07-21 12:27:10.658] 2020-07-21 12:27:10,658 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/master],methods=[],params=[],headers=[],consumes=[],produces=[application/json;charset=UTF-8],custom=[]}" onto public com.alibaba.fastjson.JSONObject cn.pconline.pcdlc.spider.web.controller.CACInteractController.getMaster(java.lang.Long)
+[2020-07-21 12:27:10.659] 2020-07-21 12:27:10,659 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/cac/s2j.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object cn.pconline.pcdlc.spider.web.controller.CACInteractController.s2j()
+[2020-07-21 12:27:10.660] 2020-07-21 12:27:10,659 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/app/unreport],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json;charset=UTF-8],custom=[]}" onto public com.alibaba.fastjson.JSONObject cn.pconline.pcdlc.spider.web.controller.CACInteractController.unreport(javax.servlet.http.HttpServletRequest,java.lang.String)
+[2020-07-21 12:27:10.660] 2020-07-21 12:27:10,660 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/cac/build.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.pconline.pcdlc.spider.vo.CACAppVo cn.pconline.pcdlc.spider.web.controller.CACInteractController.build()
+[2020-07-21 12:27:10.662] 2020-07-21 12:27:10,662 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/download/upan.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.pconline.pcdlc.spider.web.download.SoftDownloadController.upanDownload()
+[2020-07-21 12:27:10.703] 2020-07-21 12:27:10,703 [main] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+[2020-07-21 12:27:11.411] 2020-07-21 12:27:11,410 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'springmvc': initialization completed in 1466 ms
+[2020-07-21 12:34:30.239] 2020-07-21 12:34:30,238 [http-app-a-8081-5$865632109] INFO  org.gelivable.web.EnvFilter - /cac/buildJsonFile.do,80,DR0DU0CR0CU0,192.168.10.232
+[2020-07-21 12:34:30.239] 
+[2020-07-21 12:34:30.300] 2020-07-21 12:34:30,300 [Thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile start
+[2020-07-21 12:34:30.302] ##sql:  SELECT fm.dl_master_id FROM dl_master_info mi, dl_front_master fm WHERE  fm.dl_master_id=mi.dl_master_id   AND fm.dl_channel_id = 1481 AND fm.`status` = 1  AND fm.skip_top = 0  AND mi.closed = 0   ORDER BY fm.dl_master_id  
+[2020-07-21 12:34:46.929] 2020-07-21 12:34:46,929 [Thread-4] ERROR com.alibaba.druid.filter.stat.StatFilter - slow sql 16508 millis. select count(1) FROM dl_master_info mi, dl_front_master fm WHERE  fm.dl_master_id=mi.dl_master_id   AND fm.dl_channel_id = 1481 AND fm.`status` = 1  AND fm.skip_top = 0  AND mi.closed = 0   []
+[2020-07-21 12:34:46.971] ## buildJsonFile:需要处理的App总数:451611
+[2020-07-21 12:35:21.407] 2020-07-21 12:35:21,405 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:364780 appName:御龙三国
+[2020-07-21 12:35:21.409] 2020-07-21 12:35:21,407 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1601/08/c0/17365732_17365732_1452241274434.jpg
+[2020-07-21 12:35:25.341] 2020-07-21 12:35:25,341 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:354992 appName:邪恶的月亮
+[2020-07-21 12:35:25.342] 2020-07-21 12:35:25,342 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1409/05/c0/38278240_38278240_1409885071867.jpg
+[2020-07-21 12:35:31.562] 2020-07-21 12:35:31,562 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:364786 appName:星舰黎明
+[2020-07-21 12:35:31.563] 2020-07-21 12:35:31,563 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1601/08/c0/17367350_17367350_1452243651337.jpg
+[2020-07-21 12:35:46.071] 2020-07-21 12:35:46,071 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:364933 appName:宝藏和传奇
+[2020-07-21 12:35:46.071] 2020-07-21 12:35:46,071 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1601/18/c0/17687602_17687602_1453111734493.jpg
+[2020-07-21 12:35:49.065] 2020-07-21 12:35:49,065 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:77208 appName:模拟飞行
+[2020-07-21 12:35:49.065] 2020-07-21 12:35:49,065 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1408/30/c0/38053126_38053126_1409383851031.jpg
+[2020-07-21 12:35:58.037] 2020-07-21 12:35:58,037 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:356076 appName:星宝宝童书
+[2020-07-21 12:35:58.037] 2020-07-21 12:35:58,037 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1405/13/c0/34167308_34167308_1399948375078.jpg
+[2020-07-21 12:36:08.402] 2020-07-21 12:36:08,402 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:361943 appName:凡仙
+[2020-07-21 12:36:08.402] 2020-07-21 12:36:08,402 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1508/22/c0/11559972_11559972_1440221658364.jpg
+[2020-07-21 12:36:21.849] 2020-07-21 12:36:21,849 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:362080 appName:月光传奇
+[2020-07-21 12:36:21.849] 2020-07-21 12:36:21,849 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1508/31/c0/11969954_11969954_1440995709578.jpg
+[2020-07-21 12:36:35.867] 2020-07-21 12:36:35,867 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:366190 appName:复仇者联盟2
+[2020-07-21 12:36:35.867] 2020-07-21 12:36:35,867 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1604/15/c0/20349773_20349773_1460694854595.jpg
+[2020-07-21 12:36:36.012] 2020-07-21 12:36:36,012 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:362296 appName:少年西游
+[2020-07-21 12:36:36.012] 2020-07-21 12:36:36,012 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1509/11/c0/12502983_12502983_1441967861675.jpg
+[2020-07-21 12:36:42.526] 2020-07-21 12:36:42,526 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：268毫秒
+[2020-07-21 12:36:42.526] 2020-07-21 12:36:42,526 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:1000
+[2020-07-21 12:36:42.985] 2020-07-21 12:36:42,985 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:353261 appName:和彩云
+[2020-07-21 12:36:42.985] 2020-07-21 12:36:42,985 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/2007/01/c20/217758966_217758966_1593591687416.jpg
+[2020-07-21 12:36:48.582] 2020-07-21 12:36:48,581 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:362387 appName:超神吧英雄
+[2020-07-21 12:36:48.582] 2020-07-21 12:36:48,582 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1509/17/c0/12795603_12795603_1442486043424.jpg
+[2020-07-21 12:36:51.426] 2020-07-21 12:36:51,426 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:357802 appName:主公莫慌
+[2020-07-21 12:36:51.426] 2020-07-21 12:36:51,426 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1510/20/c0/14199057_14199057_1445321631965.jpg
+[2020-07-21 12:37:00.111] 2020-07-21 12:37:00,111 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:353844 appName:风跑者
+[2020-07-21 12:37:00.111] 2020-07-21 12:37:00,111 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1407/02/c0/35909164_35909164_1404299392671.jpg
+[2020-07-21 12:37:08.143] 2020-07-21 12:37:08,137 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：127毫秒
+[2020-07-21 12:37:08.143] 2020-07-21 12:37:08,143 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:2000
+[2020-07-21 12:37:20.544] 2020-07-21 12:37:20,544 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:358562 appName:暴走三国
+[2020-07-21 12:37:20.544] 2020-07-21 12:37:20,544 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1411/20/c0/41113983_41113983_1416467233237.jpg
+[2020-07-21 12:37:29.601] 2020-07-21 12:37:29,600 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：103毫秒
+[2020-07-21 12:37:29.601] 2020-07-21 12:37:29,601 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:5000
+[2020-07-21 12:37:30.468] 2020-07-21 12:37:30,468 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：113毫秒
+[2020-07-21 12:37:30.468] 2020-07-21 12:37:30,468 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:4000
+[2020-07-21 12:37:39.301] 2020-07-21 12:37:39,301 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：98毫秒
+[2020-07-21 12:37:39.301] 2020-07-21 12:37:39,301 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:3000
+[2020-07-21 12:38:21.345] 2020-07-21 12:38:21,345 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:544579 appName:开心跑酷
+[2020-07-21 12:38:21.345] 2020-07-21 12:38:21,345 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c23/33012520_1482379284077.png
+[2020-07-21 12:38:30.424] 2020-07-21 12:38:30,424 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:561226 appName:阿克多精灵
+[2020-07-21 12:38:30.424] 2020-07-21 12:38:30,424 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c129/33093445_1482407632559.png
+[2020-07-21 12:38:36.147] 2020-07-21 12:38:36,146 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:378214 appName:E洗车
+[2020-07-21 12:38:36.147] 2020-07-21 12:38:36,147 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1608/31/c1/26334005_1472636633099.png
+[2020-07-21 12:38:44.353] 2020-07-21 12:38:44,353 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：102毫秒
+[2020-07-21 12:38:44.353] 2020-07-21 12:38:44,353 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:6000
+[2020-07-21 12:38:47.379] 2020-07-21 12:38:47,378 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:545606 appName:3D狂野飞车-最高通缉
+[2020-07-21 12:38:47.379] 2020-07-21 12:38:47,379 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c21/33011336_1482378964331.png
+[2020-07-21 12:39:12.412] 2020-07-21 12:39:12,412 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:559301 appName:滑雪挑战赛13
+[2020-07-21 12:39:12.412] 2020-07-21 12:39:12,412 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c66/33042845_1482387777267.png
+[2020-07-21 12:39:21.020] 2020-07-21 12:39:21,020 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:546203 appName:大富豪传奇
+[2020-07-21 12:39:21.020] 2020-07-21 12:39:21,020 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c7/33001136_1482376298840.png
+[2020-07-21 12:39:31.427] 2020-07-21 12:39:31,426 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:546219 appName:寂寞聊聊
+[2020-07-21 12:39:31.427] 2020-07-21 12:39:31,427 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c6/33001028_1482376268921.png
+[2020-07-21 12:39:45.777] 2020-07-21 12:39:45,777 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：238毫秒
+[2020-07-21 12:39:45.777] 2020-07-21 12:39:45,777 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:8000
+[2020-07-21 12:39:51.392] 2020-07-21 12:39:51,392 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:562476 appName:俄罗斯战队
+[2020-07-21 12:39:51.392] 2020-07-21 12:39:51,392 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c26/33014736_1482379893374.png
+[2020-07-21 12:39:53.260] 2020-07-21 12:39:53,260 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：219毫秒
+[2020-07-21 12:39:53.261] 2020-07-21 12:39:53,260 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:9000
+[2020-07-21 12:39:56.567] 2020-07-21 12:39:56,567 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：171毫秒
+[2020-07-21 12:39:56.567] 2020-07-21 12:39:56,567 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:7000
+[2020-07-21 12:40:11.779] 2020-07-21 12:40:11,779 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:579482 appName:4096 KaBoom
+[2020-07-21 12:40:11.779] 2020-07-21 12:40:11,779 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10729586_18899044_1408635227/96
+[2020-07-21 12:40:20.077] 2020-07-21 12:40:20,077 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：236毫秒
+[2020-07-21 12:40:20.078] 2020-07-21 12:40:20,078 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:10000
+[2020-07-21 12:40:23.861] 2020-07-21 12:40:23,861 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:565764 appName:纸牌游戏
+[2020-07-21 12:40:23.861] 2020-07-21 12:40:23,861 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1710/04/c174/61798154_1507127615768.png
+[2020-07-21 12:40:34.010] 2020-07-21 12:40:34,010 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:579900 appName:点赞生活网
+[2020-07-21 12:40:34.010] 2020-07-21 12:40:34,010 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10571611_17993396_1397095720/96
+[2020-07-21 12:40:34.117] 2020-07-21 12:40:34,117 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:579901 appName:食用菌平台
+[2020-07-21 12:40:34.117] 2020-07-21 12:40:34,117 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_12115170_21355515_1435580117/96
+[2020-07-21 12:40:34.789] 2020-07-21 12:40:34,789 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:564541 appName:怒斩传奇
+[2020-07-21 12:40:34.789] 2020-07-21 12:40:34,789 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c130/33093968_1482407778852.png
+[2020-07-21 12:40:59.590] 2020-07-21 12:40:59,590 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:580106 appName:面相照相机
+[2020-07-21 12:40:59.590] 2020-07-21 12:40:59,590 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c52/33171207_1482432025167.png
+[2020-07-21 12:41:16.184] 2020-07-21 12:41:16,184 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:573499 appName:Any new update?
+[2020-07-21 12:41:16.184] 2020-07-21 12:41:16,184 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c59/33174587_1482433172491.png
+[2020-07-21 12:41:18.663] 2020-07-21 12:41:18,662 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:565150 appName:公主拼图
+[2020-07-21 12:41:18.663] 2020-07-21 12:41:18,663 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/22/c100/33069285_1482394768365.png
+[2020-07-21 12:41:24.679] 2020-07-21 12:41:24,679 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:580352 appName:这里是济南
+[2020-07-21 12:41:24.679] 2020-07-21 12:41:24,679 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1709/21/c98/60065257_1505945587799.png
+[2020-07-21 12:41:31.093] 2020-07-21 12:41:31,093 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：242毫秒
+[2020-07-21 12:41:31.094] 2020-07-21 12:41:31,093 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:11000
+[2020-07-21 12:41:42.384] 2020-07-21 12:41:42,384 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:573946 appName:雷电HD雷霆行动
+[2020-07-21 12:41:42.384] 2020-07-21 12:41:42,384 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c39/33163928_1482429596343.png
+[2020-07-21 12:41:48.628] 2020-07-21 12:41:48,628 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:610406 appName:宝宝拼图学英语-天空
+[2020-07-21 12:41:48.628] 2020-07-21 12:41:48,628 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c90/33232855_1482500717749.png
+[2020-07-21 12:42:01.578] 2020-07-21 12:42:01,577 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:583993 appName:55闪淘
+[2020-07-21 12:42:01.578] 2020-07-21 12:42:01,578 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_11247310_1459503270/96
+[2020-07-21 12:42:13.267] 2020-07-21 12:42:13,267 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：221毫秒
+[2020-07-21 12:42:13.268] 2020-07-21 12:42:13,268 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:12000
+[2020-07-21 12:42:24.032] 2020-07-21 12:42:24,032 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:574677 appName:哈弗H6车友会
+[2020-07-21 12:42:24.032] 2020-07-21 12:42:24,032 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c65/33218651_1482494068127.png
+[2020-07-21 12:42:24.242] 2020-07-21 12:42:24,242 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:574681 appName:妇科掌上门诊
+[2020-07-21 12:42:24.242] 2020-07-21 12:42:24,242 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10007758_18375428_1405637216/96
+[2020-07-21 12:42:41.105] 2020-07-21 12:42:41,105 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：179毫秒
+[2020-07-21 12:42:41.105] 2020-07-21 12:42:41,105 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:15000
+[2020-07-21 12:42:44.845] 2020-07-21 12:42:44,845 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：208毫秒
+[2020-07-21 12:42:44.845] 2020-07-21 12:42:44,845 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:14000
+[2020-07-21 12:42:45.193] 2020-07-21 12:42:45,193 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:611963 appName:秋季养生食谱大全
+[2020-07-21 12:42:45.193] 2020-07-21 12:42:45,193 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c179/33370041_1482585788983.png
+[2020-07-21 12:42:47.361] 2020-07-21 12:42:47,361 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：288毫秒
+[2020-07-21 12:42:47.361] 2020-07-21 12:42:47,361 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:13000
+[2020-07-21 12:43:09.497] 2020-07-21 12:43:09,497 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:612450 appName:元素守护者:勇者归来
+[2020-07-21 12:43:09.497] 2020-07-21 12:43:09,497 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/23/c82/33228496_1482499364724.png
+[2020-07-21 12:43:13.165] 2020-07-21 12:43:13,165 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:626474 appName:格斗冒险王
+[2020-07-21 12:43:13.165] 2020-07-21 12:43:13,165 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c59/33281145_1482518013491.png
+[2020-07-21 12:43:25.285] 2020-07-21 12:43:25,285 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:620530 appName:中国农资农机
+[2020-07-21 12:43:25.285] 2020-07-21 12:43:25,285 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c208/33386836_1482590386372.png
+[2020-07-21 12:43:32.066] 2020-07-21 12:43:32,066 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:620645 appName:洗车惠用户版
+[2020-07-21 12:43:32.066] 2020-07-21 12:43:32,066 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_11216582_1494664339/96
+[2020-07-21 12:43:54.231] 2020-07-21 12:43:54,231 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:624024 appName:瘋狂卡丁車
+[2020-07-21 12:43:54.232] 2020-07-21 12:43:54,231 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c180/33370622_1482585927949.png
+[2020-07-21 12:44:02.057] 2020-07-21 12:44:02,057 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:627315 appName:五一消消乐
+[2020-07-21 12:44:02.057] 2020-07-21 12:44:02,057 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c8/33254917_1482511237012.png
+[2020-07-21 12:44:10.120] 2020-07-21 12:44:10,120 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:615668 appName:消除勇士 Puzzle Warriors
+[2020-07-21 12:44:10.120] 2020-07-21 12:44:10,120 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c228/33398416_1482593619556.png
+[2020-07-21 12:44:15.992] 2020-07-21 12:44:15,992 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:621729 appName:屏幕坏点检测
+[2020-07-21 12:44:15.992] 2020-07-21 12:44:15,992 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_14791_17298819_1390309963/96
+[2020-07-21 12:44:20.076] 2020-07-21 12:44:20,076 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：219毫秒
+[2020-07-21 12:44:20.076] 2020-07-21 12:44:20,076 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:16000
+[2020-07-21 12:44:31.873] 2020-07-21 12:44:31,873 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：282毫秒
+[2020-07-21 12:44:31.873] 2020-07-21 12:44:31,873 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:17000
+[2020-07-21 12:45:03.420] 2020-07-21 12:45:03,420 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:636044 appName:爱卖车
+[2020-07-21 12:45:03.421] 2020-07-21 12:45:03,421 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10877296_1509606056/96
+[2020-07-21 12:45:09.103] 2020-07-21 12:45:09,103 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：249毫秒
+[2020-07-21 12:45:09.103] 2020-07-21 12:45:09,103 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:18000
+[2020-07-21 12:45:15.323] 2020-07-21 12:45:15,323 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:626102 appName:山地自行车
+[2020-07-21 12:45:15.323] 2020-07-21 12:45:15,323 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c83/33293773_1482521343472.png
+[2020-07-21 12:45:16.743] 2020-07-21 12:45:16,743 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:639677 appName:爱拍
+[2020-07-21 12:45:16.743] 2020-07-21 12:45:16,743 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_40149_519795_1415089098/96
+[2020-07-21 12:45:19.987] 2020-07-21 12:45:19,987 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：295毫秒
+[2020-07-21 12:45:19.987] 2020-07-21 12:45:19,987 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:19000
+[2020-07-21 12:45:23.408] 2020-07-21 12:45:23,408 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：249毫秒
+[2020-07-21 12:45:23.408] 2020-07-21 12:45:23,408 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:20000
+[2020-07-21 12:45:36.105] 2020-07-21 12:45:36,105 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:630281 appName:明星渔洞
+[2020-07-21 12:45:36.105] 2020-07-21 12:45:36,105 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c134/33345987_1482579921615.png
+[2020-07-21 12:46:08.163] 2020-07-21 12:46:08,163 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:652543 appName:DC超级英雄大战
+[2020-07-21 12:46:08.166] 2020-07-21 12:46:08,163 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1704/03/c219/41536636_1491234721402.png
+[2020-07-21 12:46:51.092] 2020-07-21 12:46:51,092 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:643642 appName:星际2072
+[2020-07-21 12:46:51.092] 2020-07-21 12:46:51,092 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c77/33290352_1482520376319.png
+[2020-07-21 12:46:56.692] 2020-07-21 12:46:56,692 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：195毫秒
+[2020-07-21 12:46:56.692] 2020-07-21 12:46:56,692 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:21000
+[2020-07-21 12:46:59.934] 2020-07-21 12:46:59,934 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：178毫秒
+[2020-07-21 12:46:59.935] 2020-07-21 12:46:59,935 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:22000
+[2020-07-21 12:47:14.312] 2020-07-21 12:47:14,312 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:663032 appName:二手房交易
+[2020-07-21 12:47:14.312] 2020-07-21 12:47:14,312 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1704/07/c12/42007977_1491496760252.png
+[2020-07-21 12:47:22.876] 2020-07-21 12:47:22,876 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:644260 appName:杂耍小猫
+[2020-07-21 12:47:22.876] 2020-07-21 12:47:22,876 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/24/c58/33280539_1482517849399.png
+[2020-07-21 12:47:36.908] 2020-07-21 12:47:36,908 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:644538 appName:像素英雄
+[2020-07-21 12:47:36.908] 2020-07-21 12:47:36,908 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_1093077_17733046_1395686935/96
+[2020-07-21 12:47:54.482] 2020-07-21 12:47:54,481 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：210毫秒
+[2020-07-21 12:47:54.482] 2020-07-21 12:47:54,482 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:23000
+[2020-07-21 12:47:58.574] 2020-07-21 12:47:58,573 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：191毫秒
+[2020-07-21 12:47:58.574] 2020-07-21 12:47:58,574 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:25000
+[2020-07-21 12:48:03.325] 2020-07-21 12:48:03,325 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：213毫秒
+[2020-07-21 12:48:03.325] 2020-07-21 12:48:03,325 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:24000
+[2020-07-21 12:48:12.451] 2020-07-21 12:48:12,451 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:664063 appName:钢铁侠冲击
+[2020-07-21 12:48:12.451] 2020-07-21 12:48:12,451 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_193411_17348290_1390582420/96
+[2020-07-21 12:48:29.389] 2020-07-21 12:48:29,389 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:666118 appName:月华剑士2
+[2020-07-21 12:48:29.389] 2020-07-21 12:48:29,389 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c65/33466859_1482667316225.png
+[2020-07-21 12:48:30.514] 2020-07-21 12:48:30,514 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:666164 appName:赛车对决2
+[2020-07-21 12:48:30.514] 2020-07-21 12:48:30,514 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c32/33421619_1482599645279.png
+[2020-07-21 12:48:31.444] 2020-07-21 12:48:31,443 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:677062 appName:泥人跳跃
+[2020-07-21 12:48:31.444] 2020-07-21 12:48:31,444 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c16/33412902_1482597491246.png
+[2020-07-21 12:48:36.879] 2020-07-21 12:48:36,879 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:662030 appName:大侠挂机吧
+[2020-07-21 12:48:36.879] 2020-07-21 12:48:36,879 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/26/c137/33648677_1482765850162.png
+[2020-07-21 12:48:47.811] 2020-07-21 12:48:47,811 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:677169 appName:皇家帆船
+[2020-07-21 12:48:47.811] 2020-07-21 12:48:47,811 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c11/33410531_1482596931105.png
+[2020-07-21 12:49:11.264] 2020-07-21 12:49:11,264 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:666692 appName:暴力刑警
+[2020-07-21 12:49:11.264] 2020-07-21 12:49:11,264 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/26/c126/33641719_1482763622317.png
+[2020-07-21 12:49:18.244] 2020-07-21 12:49:18,244 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:677467 appName:PHOENIX
+[2020-07-21 12:49:18.244] 2020-07-21 12:49:18,244 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/26/c145/33654129_1482767634021.png
+[2020-07-21 12:49:27.846] 2020-07-21 12:49:27,846 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：349毫秒
+[2020-07-21 12:49:27.847] 2020-07-21 12:49:27,847 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:26000
+[2020-07-21 12:49:28.832] 2020-07-21 12:49:28,832 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：290毫秒
+[2020-07-21 12:49:28.833] 2020-07-21 12:49:28,833 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:27000
+[2020-07-21 12:50:17.259] 2020-07-21 12:50:17,259 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:667075 appName:天天象上
+[2020-07-21 12:50:17.260] 2020-07-21 12:50:17,260 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/26/c1
+[2020-07-21 12:50:17.652] 2020-07-21 12:50:17,652 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：211毫秒
+[2020-07-21 12:50:17.652] 2020-07-21 12:50:17,652 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:29000
+[2020-07-21 12:50:20.392] 2020-07-21 12:50:20,392 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:679303 appName:小雨滴
+[2020-07-21 12:50:20.392] 2020-07-21 12:50:20,392 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c74/33471938_1482668563704.png
+[2020-07-21 12:50:40.901] 2020-07-21 12:50:40,901 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:679452 appName:破冰者
+[2020-07-21 12:50:40.901] 2020-07-21 12:50:40,901 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c49/33458464_1482665144687.png
+[2020-07-21 12:50:42.252] 2020-07-21 12:50:42,252 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:684199 appName:星之卡比 镜中的迷宫
+[2020-07-21 12:50:42.252] 2020-07-21 12:50:42,252 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c39/33817939_1482861281152.png
+[2020-07-21 12:50:46.666] 2020-07-21 12:50:46,665 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：168毫秒
+[2020-07-21 12:50:46.666] 2020-07-21 12:50:46,666 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:30000
+[2020-07-21 12:51:18.159] 2020-07-21 12:51:18,159 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：564毫秒
+[2020-07-21 12:51:18.160] 2020-07-21 12:51:18,160 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:28000
+[2020-07-21 12:51:22.407] 2020-07-21 12:51:22,407 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:690598 appName:盲景(汉化版)
+[2020-07-21 12:51:22.407] 2020-07-21 12:51:22,407 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10137208_17277278_1390211667/96
+[2020-07-21 12:51:24.303] 2020-07-21 12:51:24,303 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:679932 appName:566车
+[2020-07-21 12:51:24.303] 2020-07-21 12:51:24,303 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c69/33469118_1482667883367.png
+[2020-07-21 12:51:25.746] 2020-07-21 12:51:25,746 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:685553 appName:仙道问情-万剑归宗
+[2020-07-21 12:51:25.746] 2020-07-21 12:51:25,746 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_16115_17216276_1389670871/96
+[2020-07-21 12:51:42.210] 2020-07-21 12:51:42,210 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:690786 appName:Easy Chinese
+[2020-07-21 12:51:42.211] 2020-07-21 12:51:42,211 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c89/33888851_1482927337959.png
+[2020-07-21 12:52:07.433] 2020-07-21 12:52:07,433 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：201毫秒
+[2020-07-21 12:52:07.433] 2020-07-21 12:52:07,433 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:31000
+[2020-07-21 12:52:08.568] 2020-07-21 12:52:08,568 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：216毫秒
+[2020-07-21 12:52:08.568] 2020-07-21 12:52:08,568 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:32000
+[2020-07-21 12:52:17.508] 2020-07-21 12:52:17,508 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:693642 appName:幼儿英语ABC
+[2020-07-21 12:52:17.508] 2020-07-21 12:52:17,508 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/27/c129/33777924_1482849526937.png
+[2020-07-21 12:52:33.737] 2020-07-21 12:52:33,737 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:689533 appName:极速方程式赛车
+[2020-07-21 12:52:33.737] 2020-07-21 12:52:33,737 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/27/c40/33681066_1482775639994.png
+[2020-07-21 12:52:42.819] 2020-07-21 12:52:42,819 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:693978 appName:让我们烧烤
+[2020-07-21 12:52:42.819] 2020-07-21 12:52:42,819 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c142/33921690_1482938173494.png
+[2020-07-21 12:52:51.257] 2020-07-21 12:52:51,257 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:694086 appName:阿法贝乐园
+[2020-07-21 12:52:51.257] 2020-07-21 12:52:51,257 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_12168588_1502760804/96
+[2020-07-21 12:52:57.299] 2020-07-21 12:52:57,299 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：271毫秒
+[2020-07-21 12:52:57.299] 2020-07-21 12:52:57,299 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:33000
+[2020-07-21 12:53:26.690] 2020-07-21 12:53:26,690 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：207毫秒
+[2020-07-21 12:53:26.690] 2020-07-21 12:53:26,690 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:34000
+[2020-07-21 12:53:27.142] 2020-07-21 12:53:27,142 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:696539 appName:儿童应用锁
+[2020-07-21 12:53:27.142] 2020-07-21 12:53:27,142 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://www1.pconline.com.cn/download/80-80.jpg
+[2020-07-21 12:53:29.291] 2020-07-21 12:53:29,291 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:699709 appName:指尖湛江
+[2020-07-21 12:53:29.292] 2020-07-21 12:53:29,291 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10684608_1502789197/96
+[2020-07-21 12:53:29.506] 2020-07-21 12:53:29,506 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:694654 appName:圣瑞在一起
+[2020-07-21 12:53:29.506] 2020-07-21 12:53:29,506 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c90/33889560_1482927527283.png
+[2020-07-21 12:53:37.347] 2020-07-21 12:53:37,347 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:703016 appName:宠物内存
+[2020-07-21 12:53:37.348] 2020-07-21 12:53:37,347 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_80125_17176264_1389173905/96
+[2020-07-21 12:53:59.395] 2020-07-21 12:53:59,394 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：218毫秒
+[2020-07-21 12:53:59.395] 2020-07-21 12:53:59,395 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:35000
+[2020-07-21 12:54:24.102] 2020-07-21 12:54:24,102 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:700439 appName:大妈买菜
+[2020-07-21 12:54:24.103] 2020-07-21 12:54:24,103 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c90/33889582_1482927533400.png
+[2020-07-21 12:54:31.007] 2020-07-21 12:54:31,007 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:700517 appName:配置工具
+[2020-07-21 12:54:31.008] 2020-07-21 12:54:31,007 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_12219542_1502783832/96
+[2020-07-21 12:54:33.123] 2020-07-21 12:54:33,122 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:705368 appName:三国Q将
+[2020-07-21 12:54:33.123] 2020-07-21 12:54:33,123 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/27/c129/33777566_1482849415611.png
+[2020-07-21 12:54:42.297] 2020-07-21 12:54:42,297 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：187毫秒
+[2020-07-21 12:54:42.297] 2020-07-21 12:54:42,297 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:37000
+[2020-07-21 12:54:52.219] 2020-07-21 12:54:52,219 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:702608 appName:字体换换
+[2020-07-21 12:54:52.219] 2020-07-21 12:54:52,219 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_161197_17772890_1395890808/96
+[2020-07-21 12:55:09.860] 2020-07-21 12:55:09,860 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:704397 appName:启创1926
+[2020-07-21 12:55:09.860] 2020-07-21 12:55:09,860 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_52393472_1502767271/96
+[2020-07-21 12:55:14.067] 2020-07-21 12:55:14,067 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：196毫秒
+[2020-07-21 12:55:14.067] 2020-07-21 12:55:14,067 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:38000
+[2020-07-21 12:55:15.869] 2020-07-21 12:55:15,869 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：221毫秒
+[2020-07-21 12:55:15.869] 2020-07-21 12:55:15,869 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:36000
+[2020-07-21 12:55:39.834] 2020-07-21 12:55:39,834 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:707280 appName:腾冲网
+[2020-07-21 12:55:39.834] 2020-07-21 12:55:39,834 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/27/c66/33738514_1482838006993.png
+[2020-07-21 12:55:40.772] 2020-07-21 12:55:40,772 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:712604 appName:巧学唐诗三百首
+[2020-07-21 12:55:40.773] 2020-07-21 12:55:40,772 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/29/c19/33941296_1482944628953.png
+[2020-07-21 12:55:59.870] 2020-07-21 12:55:59,870 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：313毫秒
+[2020-07-21 12:55:59.870] 2020-07-21 12:55:59,870 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:39000
+[2020-07-21 12:56:21.483] 2020-07-21 12:56:21,483 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:709808 appName:极速越野车拉力锦标赛
+[2020-07-21 12:56:21.484] 2020-07-21 12:56:21,483 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/29/c10/33935017_1482942730173.png
+[2020-07-21 12:56:29.744] 2020-07-21 12:56:29,744 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：171毫秒
+[2020-07-21 12:56:29.745] 2020-07-21 12:56:29,744 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:40000
+[2020-07-21 12:57:08.296] 2020-07-21 12:57:08,296 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:715669 appName:圣射手传奇
+[2020-07-21 12:57:08.296] 2020-07-21 12:57:08,296 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/30/c34/34083342_1483101198609.png
+[2020-07-21 12:57:26.236] 2020-07-21 12:57:26,236 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:708440 appName:花途
+[2020-07-21 12:57:26.236] 2020-07-21 12:57:26,236 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/28/c0/33793300_1482854569242.png
+[2020-07-21 12:57:26.381] 2020-07-21 12:57:26,381 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:711705 appName:住房贷款计算器
+[2020-07-21 12:57:26.382] 2020-07-21 12:57:26,382 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_161182_17287803_1390304690/96
+[2020-07-21 12:57:32.453] 2020-07-21 12:57:32,453 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：144毫秒
+[2020-07-21 12:57:32.453] 2020-07-21 12:57:32,453 [pool-2-thread-5] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:41000
+[2020-07-21 12:57:41.147] 2020-07-21 12:57:41,147 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:719300 appName:魅力贺兰
+[2020-07-21 12:57:41.147] 2020-07-21 12:57:41,147 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10918394_1445566270/96
+[2020-07-21 12:57:43.184] 2020-07-21 12:57:43,184 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:718058 appName:迷情宝石
+[2020-07-21 12:57:43.184] 2020-07-21 12:57:43,184 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1804/07/c91/81332113_1523056301057.png
+[2020-07-21 12:57:47.966] 2020-07-21 12:57:47,966 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:716082 appName:救护车狂飙
+[2020-07-21 12:57:47.966] 2020-07-21 12:57:47,966 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1706/06/c7/49105953_1496690721590.png
+[2020-07-21 12:57:51.373] 2020-07-21 12:57:51,373 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：227毫秒
+[2020-07-21 12:57:51.373] 2020-07-21 12:57:51,373 [pool-2-thread-1] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:43000
+[2020-07-21 12:57:54.054] 2020-07-21 12:57:54,054 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：198毫秒
+[2020-07-21 12:57:54.055] 2020-07-21 12:57:54,055 [pool-2-thread-4] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:42000
+[2020-07-21 12:58:04.327] 2020-07-21 12:58:04,327 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:721171 appName:移火柴
+[2020-07-21 12:58:04.327] 2020-07-21 12:58:04,327 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/30/c39/34085779_1483101907133.png
+[2020-07-21 12:58:20.681] 2020-07-21 12:58:20,680 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:721247 appName:星防线
+[2020-07-21 12:58:20.681] 2020-07-21 12:58:20,681 [pool-2-thread-1] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/30/c27/34079340_1483100127440.png
+[2020-07-21 12:58:36.675] 2020-07-21 12:58:36,675 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:716660 appName:免费国际象棋
+[2020-07-21 12:58:36.675] 2020-07-21 12:58:36,675 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1704/02/c77/41326294_1491073124052.png
+[2020-07-21 12:59:01.870] 2020-07-21 12:59:01,870 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：287毫秒
+[2020-07-21 12:59:01.870] 2020-07-21 12:59:01,870 [pool-2-thread-3] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:45000
+[2020-07-21 12:59:05.907] 2020-07-21 12:59:05,907 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:734140 appName:桌面足球
+[2020-07-21 12:59:05.907] 2020-07-21 12:59:05,907 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/25/c137/33508000_1482678149307.png
+[2020-07-21 12:59:07.286] 2020-07-21 12:59:07,286 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.util.CACFileUtils - 写入文件耗时：195毫秒
+[2020-07-21 12:59:07.287] 2020-07-21 12:59:07,287 [pool-2-thread-2] INFO  cn.pconline.pcdlc.spider.service.CACInteractService - ## buildJsonFile: 已处理的App总数:44000
+[2020-07-21 12:59:28.539] 2020-07-21 12:59:28,539 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:740020 appName:Prom Princess
+[2020-07-21 12:59:28.539] 2020-07-21 12:59:28,539 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/31/c78/34197202_1483183946815.png
+[2020-07-21 12:59:33.035] 2020-07-21 12:59:33,035 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:736690 appName:森林里的动物益智游戏
+[2020-07-21 12:59:33.035] 2020-07-21 12:59:33,035 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://img.pconline.com.cn/images/upload/upc/tx/pcdlc/1612/31/c30/34141581_1483118955789.png
+[2020-07-21 12:59:39.668] 2020-07-21 12:59:39,668 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:740155 appName:简易时钟控件
+[2020-07-21 12:59:39.668] 2020-07-21 12:59:39,668 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_1035_16910793_1392270887/96
+[2020-07-21 12:59:39.697] 2020-07-21 12:59:39,697 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:720991 appName:海淘车
+[2020-07-21 12:59:39.697] 2020-07-21 12:59:39,697 [pool-2-thread-5] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_11955392_1502775855/96
+[2020-07-21 12:59:44.377] 2020-07-21 12:59:44,377 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:734750 appName:空军防卫
+[2020-07-21 12:59:44.377] 2020-07-21 12:59:44,377 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_80107_17264088_1390003734/96
+[2020-07-21 12:59:51.097] 2020-07-21 12:59:51,097 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:737220 appName:魔法之塔与魔法之卵
+[2020-07-21 12:59:51.097] 2020-07-21 12:59:51,097 [pool-2-thread-3] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_10787163_1459514710/96
+[2020-07-21 12:59:52.741] 2020-07-21 12:59:52,741 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:734872 appName:ArtStack
+[2020-07-21 12:59:52.742] 2020-07-21 12:59:52,741 [pool-2-thread-4] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_1269529_17788979_1395894569/96
+[2020-07-21 12:59:56.088] 2020-07-21 12:59:56,088 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo编码出错, masterId:740385 appName:修电脑服务版
+[2020-07-21 12:59:56.088] 2020-07-21 12:59:56,088 [pool-2-thread-2] ERROR cn.pconline.pcdlc.spider.service.CACInteractService - ## 软件的logo:http://pp.myapp.com/ma_icon/0/icon_12142577_1502761209/96
