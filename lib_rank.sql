@@ -1,38 +1,5 @@
-/*
- Navicat Premium Data Transfer
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50525
- Source Host           : 127.0.0.1:3306
- Source Schema         : ibernate
 
- Target Server Type    : MySQL
- Target Server Version : 50525
- File Encoding         : 65001
-
- Date: 21/10/2020 17:57:51
-*/
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for lib_rank
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank`;
-CREATE TABLE `lib_rank`  (
-  `rank_id` int(11) NOT NULL,
-  `category_id` int(11) NULL DEFAULT NULL,
-  `designer_id` int(11) NULL DEFAULT NULL,
-  `brand_minfo` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '产品主推信息',
-  `product_minfo` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '品牌主推信息',
-  PRIMARY KEY (`rank_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = gbk COLLATE = gbk_chinese_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of lib_rank
--- ----------------------------
 INSERT INTO `lib_rank` VALUES (18, 414, 2964, '福州择木创建室内设计总监。在设计风格上以现代简约、美式、北欧、日式见长，敢于突破、创新，尝试新手法。设计作品风格各异，设计手法大气、简炼，同时注重细节的精致，对空间有很强的把握能力。', '福州择木创建室内设计总监。在设计风格上以现代简约、美式、北欧、日式见长，敢于突破、创新，尝试新手法。设计作品风格各异，设计手法大气、简炼，同时注重细节的精致，对空间有很强的把握能力。');
 INSERT INTO `lib_rank` VALUES (19, 607, 15913, '陈朝辉设计工作室设计总监，毕业于北京师范大学&湛江艺术学校，曾获得各类空间设计奖项40多个。部分荣誉：2019年中国住宅设计精英榜-广东100强。2018年度中国软装设计大赛「龙承奖」商业空间优秀奖。2018年香港室内设计师协会亚太设计师大赛工程类办公室空间钻石奖荣。', '陈朝辉设计工作室设计总监，毕业于北京师范大学&湛江艺术学校，曾获得各类空间设计奖项40多个。部分荣誉：2019年中国住宅设计精英榜-广东100强。2018年度中国软装设计大赛「龙承奖」商业空间优秀奖。2018年香港室内设计师协会亚太设计师大赛工程类办公室空间钻石奖荣。');
 INSERT INTO `lib_rank` VALUES (20, 662, 72122, '沈阳东易日盛装饰设计主案设计师，从业经验6年，擅长家装设计，家居装饰搭配。', '沈阳东易日盛装饰设计主案设计师，从业经验6年，擅长家装设计，家居装饰搭配。');
@@ -40,47 +7,7 @@ INSERT INTO `lib_rank` VALUES (21, 317, 14611, '网络知名设计师，清羽�
 INSERT INTO `lib_rank` VALUES (22, 653, 13124, '圣奇凯尚装饰联合创始人/设计总监，装饰协会注册设计师：高级设计师。擅长设计：欧美、新古典、后现代简约工业风、混搭风格。做有温度的设计，设计不拘泥一格、经纬有度，以人与自然环境和谐为根本，人所居，基长青。', '圣奇凯尚装饰联合创始人/设计总监，装饰协会注册设计师：高级设计师。擅长设计：欧美、新古典、后现代简约工业风、混搭风格。做有温度的设计，设计不拘泥一格、经纬有度，以人与自然环境和谐为根本，人所居，基长青。');
 INSERT INTO `lib_rank` VALUES (23, 256, 15748, '深圳见微陈设艺术设计有限公司创始人兼设计总监，从事家装纯设计十余年，作品多次登录CCTV2<榜样空间》榜样作品，中国美院进修生。', '深圳见微陈设艺术设计有限公司创始人兼设计总监，从事家装纯设计十余年，作品多次登录CCTV2<榜样空间》榜样作品，中国美院进修生。');
 
--- ----------------------------
--- Table structure for lib_rank_brand
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_brand`;
-CREATE TABLE `lib_rank_brand`  (
-  `rank_id` int(11) NOT NULL COMMENT '榜单id',
-  `brand_id` int(11) NOT NULL COMMENT '品牌id',
-  `reason` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '推荐理由',
-  `pv_month` int(11) NULL DEFAULT NULL COMMENT '月PV流量',
-  `hot_value` int(255) NULL DEFAULT NULL COMMENT '热度',
-  `is_hand_set` tinyint(2) NULL DEFAULT NULL COMMENT '是否手动设置',
-  `status` tinyint(2) NULL DEFAULT NULL COMMENT '状态',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`, `brand_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '产品榜单' ROW_FORMAT = Compact;
 
--- ----------------------------
--- Table structure for lib_rank_product
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_product`;
-CREATE TABLE `lib_rank_product`  (
-  `rank_id` int(11) NOT NULL COMMENT '榜单id',
-  `product_id` int(11) NOT NULL COMMENT '产品id',
-  `reason` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '推荐理由',
-  `pv_month` int(11) NULL DEFAULT NULL COMMENT '月PV流量',
-  `hot_value` int(255) NULL DEFAULT NULL COMMENT '热度',
-  `is_hand_set` tinyint(2) NULL DEFAULT NULL COMMENT '是否手动设置',
-  `status` tinyint(2) NULL DEFAULT NULL COMMENT '状态',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`, `product_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '产品榜单' ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of lib_rank_product
--- ----------------------------
 INSERT INTO `lib_rank_product` VALUES (18, 725972, '这款潜水艇地漏不锈钢主体的加厚面板，达10mm，锻压一体成型无焊接，耐用耐腐蚀，表面拉丝哑光处理，耐磨不生锈。', NULL, 100, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (18, 725973, '加宽加大镂空面积，排水速度更快更稳定，利用重力及机械原理实现密封功能，下水接头配备硅胶密封圈紧固，双重密封防臭防虫。', NULL, 99, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (18, 725974, '使用一体锻造黄铜材质和多层电镀工艺，哑黑质感，高而不冷，浴室多一份轻奢之感。地漏芯采用ABS材质，运用重力原理和磁吸自闭技术密封闭合，有效防止污水返溢。', NULL, 98, 1, NULL, NULL, NULL, NULL, NULL);
@@ -130,23 +57,17 @@ INSERT INTO `lib_rank_product` VALUES (23, 726017, '产品采用纳米二氧化�
 INSERT INTO `lib_rank_product` VALUES (23, 726018, '采用表面积800-1000㎡/g配方椰壳微孔活性炭，快速净化板材、木地板等释放装修甲醛。搭载灵敏颗粒物传感器，自动急速除烟，呵护全家人的健康生活。', NULL, 94, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (23, 726019, '产品采用360°大滤网设计，空气快速对流，性能表现出众。强劲去除小微米颗粒物，快速净化PM2.5/过敏源/有害气体、滤网展开面积高达4㎡，使用时间更长，能够深度吸附甲醛、甲苯。', NULL, 93, 1, NULL, NULL, NULL, NULL, NULL);
 
--- ----------------------------
--- Table structure for lib_rank_product_show
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_product_show`;
-CREATE TABLE `lib_rank_product_show`  (
-  `rank_id` int(11) NOT NULL AUTO_INCREMENT,
-  `sort` int(11) NULL DEFAULT 99 COMMENT '排序',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '产品榜单展示' ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of lib_rank_product_show
--- ----------------------------
 INSERT INTO `lib_rank_product_show` VALUES (18, 18, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
+INSERT INTO `lib_rank_product_show` VALUES (19, 19, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
+INSERT INTO `lib_rank_product_show` VALUES (20, 20, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
+INSERT INTO `lib_rank_product_show` VALUES (21, 21, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
+INSERT INTO `lib_rank_product_show` VALUES (22, 22, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
+INSERT INTO `lib_rank_product_show` VALUES (23, 23, 'admin', '2020-10-21 17:57:19', 'admin', '2020-10-21 17:57:26');
 
-SET FOREIGN_KEY_CHECKS = 1;
+
+INSERT INTO `lib_rank_brand_show` VALUES (18, 18, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
+INSERT INTO `lib_rank_brand_show` VALUES (19, 19, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
+INSERT INTO `lib_rank_brand_show` VALUES (20, 20, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
+INSERT INTO `lib_rank_brand_show` VALUES (21, 21, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
+INSERT INTO `lib_rank_brand_show` VALUES (22, 22, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
+INSERT INTO `lib_rank_brand_show` VALUES (23, 23, 'admin', '2020-10-21 17:56:40', 'admin', '2020-10-21 17:56:51');
