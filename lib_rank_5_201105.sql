@@ -1,64 +1,8 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50525
- Source Host           : 127.0.0.1:3306
- Source Schema         : ibernate
-
- Target Server Type    : MySQL
- Target Server Version : 50525
- File Encoding         : 65001
-
- Date: 05/11/2020 15:24:55
-*/
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for lib_rank
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank`;
-CREATE TABLE `lib_rank`  (
-  `rank_id` int(11) NOT NULL,
-  `category_id` int(11) NULL DEFAULT NULL,
-  `designer_id` int(11) NULL DEFAULT NULL,
-  `brand_minfo` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '产品主推信息',
-  `product_minfo` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '品牌主推信息',
-  PRIMARY KEY (`rank_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = gbk COLLATE = gbk_chinese_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of lib_rank
--- ----------------------------
 INSERT INTO `lib_rank` VALUES (24, 358, 23109, 'DFDesign开垦(空间)事务所设计总监，上海工程技术大学兼职教授，国际认证高级室内设计师。中国建筑学会（室内设计分会）、中国风景园林学会、中国室内装饰协会会员，设计上下游产业链发起人之一，誉为“空间魔术师”。', 'DFDesign开垦(空间)事务所设计总监，上海工程技术大学兼职教授，国际认证高级室内设计师。中国建筑学会（室内设计分会）、中国风景园林学会、中国室内装饰协会会员，设计上下游产业链发起人之一，誉为“空间魔术师”。');
 INSERT INTO `lib_rank` VALUES (25, 424, 16134, '空间设计师，九睿空间创意设计事务所创始人，去风格化主义倡导者，中国新锐设计领袖。秉承将生活形态和美学意识结合演绎出三宅一生的空间理念，在北京、上海、深圳、成都、西安及江浙多地完成了众多私人别墅府邸及样板间设计项目。', '空间设计师，九睿空间创意设计事务所创始人，去风格化主义倡导者，中国新锐设计领袖。秉承将生活形态和美学意识结合演绎出三宅一生的空间理念，在北京、上海、深圳、成都、西安及江浙多地完成了众多私人别墅府邸及样板间设计项目。');
 INSERT INTO `lib_rank` VALUES (26, 290, 15985, '湖北工业大学艺术设计学MFA硕士；中国室内设计师协会会员；江苏无同院文化艺术设计有限公司（无同院）合伙人&创意总监；东方卫视《生活改造家》设计师。喜欢打破传统，融入现代美学观念，去繁从简，还原空间真美。', '湖北工业大学艺术设计学MFA硕士；中国室内设计师协会会员；江苏无同院文化艺术设计有限公司（无同院）合伙人&创意总监；东方卫视《生活改造家》设计师。喜欢打破传统，融入现代美学观念，去繁从简，还原空间真美。');
 
--- ----------------------------
--- Table structure for lib_rank_brand
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_brand`;
-CREATE TABLE `lib_rank_brand`  (
-  `rank_id` int(11) NOT NULL COMMENT '榜单id',
-  `brand_id` int(11) NOT NULL COMMENT '品牌id',
-  `reason` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '推荐理由',
-  `pv_month` int(11) NULL DEFAULT NULL COMMENT '月PV流量',
-  `hot_value` int(255) NULL DEFAULT NULL COMMENT '热度',
-  `is_hand_set` tinyint(2) NULL DEFAULT NULL COMMENT '是否手动设置',
-  `status` tinyint(2) NULL DEFAULT NULL COMMENT '状态',
-  `create_by` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`, `brand_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '产品榜单' ROW_FORMAT = Compact;
 
--- ----------------------------
--- Records of lib_rank_brand
--- ----------------------------
 INSERT INTO `lib_rank_brand` VALUES (24, 660, '美的品牌致力于创新、完美与和谐，美的始终没有放弃自己的中文识别符号“美的”，这也一直贯穿美的LOGO整个品牌运作的始终，美的集成灶具备一星臭氧低温消毒能力，搭载低温烘干技术，实现餐具深层除菌、除异味。', NULL, 99, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_brand` VALUES (24, 4654, '帅丰品牌的设计理念是开创厨房美好时代，脚踏实地，追求卓越 真诚让顾客满意，致力于成为现代健康厨房生活的引领者和中国集成灶行业领军品牌，帅丰集成灶具有吸油烟效果好、节能低耗环保、噪声低、节省空间、拆洗方便等优点。', NULL, 98, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_brand` VALUES (24, 5294, '美大集成灶通过专利技术，提高吸油烟率，解决了长期悬而未决的厨房油烟污染和厨房装修设计难题，根除了厨房油烟对环境的污染和人体健康的危害，净化并改善了厨房和居室环境，保障了人体健康和提高了生活质量。', NULL, 95, 1, NULL, NULL, NULL, NULL, NULL);
@@ -84,47 +28,10 @@ INSERT INTO `lib_rank_brand` VALUES (26, 660, '美的品牌致力于创新、完
 INSERT INTO `lib_rank_brand` VALUES (26, 810, '对于西门子家电来说，工业设计的语言，还意味着经典的外观。西门子家电产品的外观还获得了红点、IF等国内外各类大奖，西门子冰箱密度高，抗腐蚀，双层减震，可容量大物件。', NULL, 99, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_brand` VALUES (26, 6328, '卡萨帝是国际高端家电品牌，以极致高端原创科技，打造精致产品，将科技与艺术完美结合，引领家电生活艺术趋势，卡萨帝冰箱拥有自然储箱空间，大容量，分区存，强杀菌的功能，并具有冷冻室的照明灯，不刺眼。', NULL, 96, 1, NULL, NULL, NULL, NULL, NULL);
 
--- ----------------------------
--- Table structure for lib_rank_brand_show
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_brand_show`;
-CREATE TABLE `lib_rank_brand_show`  (
-  `rank_id` int(11) NOT NULL AUTO_INCREMENT,
-  `sort` int(11) NULL DEFAULT 99 COMMENT '排序',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '品牌榜单展示' ROW_FORMAT = Compact;
 
--- ----------------------------
--- Records of lib_rank_brand_show
--- ----------------------------
 INSERT INTO `lib_rank_brand_show` VALUES (24, 24, 'admin', '2020-11-05 17:56:40', 'admin', '2020-11-05 17:56:50');
 
--- ----------------------------
--- Table structure for lib_rank_product
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_product`;
-CREATE TABLE `lib_rank_product`  (
-  `rank_id` int(11) NOT NULL COMMENT '榜单id',
-  `product_id` int(11) NOT NULL COMMENT '产品id',
-  `reason` varchar(255) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL COMMENT '推荐理由',
-  `pv_month` int(11) NULL DEFAULT NULL COMMENT '月PV流量',
-  `hot_value` int(255) NULL DEFAULT NULL COMMENT '热度',
-  `is_hand_set` tinyint(2) NULL DEFAULT NULL COMMENT '是否手动设置',
-  `status` tinyint(2) NULL DEFAULT NULL COMMENT '状态',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`, `product_id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '产品榜单' ROW_FORMAT = Compact;
 
--- ----------------------------
--- Records of lib_rank_product
--- ----------------------------
 INSERT INTO `lib_rank_product` VALUES (24, 726072, '这款集成灶拥有定期语音提醒功能，自动油盒清洗功能，无须担心油溢满地，一抽即倒非常省心，集成灶水箱自动检测，水箱状态随时播报，非常适合居家生活。', NULL, 100, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (24, 726073, '这款集成灶有多面小黑盒设计，烟灶消储一机搞定，四合一配置，安装一步到位，另外能够充分利用吊柜空间，省下一米橱柜，真的是非常适合呢。', NULL, 99, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (24, 726074, '这款集成灶有57L消毒储物柜，能容量大物件，大平台好置物，低空近吸，能够有效锁定控油区，在油烟扩散前强力速吸，油烟不过脸，值得消费者的信赖。', NULL, 98, 1, NULL, NULL, NULL, NULL, NULL);
@@ -150,23 +57,5 @@ INSERT INTO `lib_rank_product` VALUES (26, 726093, '这款畅销经典款冰箱�
 INSERT INTO `lib_rank_product` VALUES (26, 726094, '创维这款186L双门节能冰箱，封条内置99.99%抗菌粉末，有效抑制细菌滋生放霉变，保持食材新鲜。升级匀冷微霜保鲜，结霜率降低50%。冷冻室内无蒸发器阻隔，三层抽屉可实现生熟等分离。', NULL, 94, 1, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `lib_rank_product` VALUES (26, 726095, '这款220L大容量三门冰箱，冷藏、软冷冻、冷冻三门科学分储，满足全家人需求，琥珀金面板，美观且耐摩擦、耐腐蚀、易清洁。可调节门搁架，空间灵活使用。', NULL, 93, 1, NULL, NULL, NULL, NULL, NULL);
 
--- ----------------------------
--- Table structure for lib_rank_product_show
--- ----------------------------
-DROP TABLE IF EXISTS `lib_rank_product_show`;
-CREATE TABLE `lib_rank_product_show`  (
-  `rank_id` int(11) NOT NULL AUTO_INCREMENT,
-  `sort` int(11) NULL DEFAULT 99 COMMENT '排序',
-  `create_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建日期',
-  `update_by` varchar(50) CHARACTER SET gbk COLLATE gbk_chinese_ci NULL DEFAULT NULL,
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`rank_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = gbk COLLATE = gbk_chinese_ci COMMENT = '产品榜单展示' ROW_FORMAT = Compact;
 
--- ----------------------------
--- Records of lib_rank_product_show
--- ----------------------------
 INSERT INTO `lib_rank_product_show` VALUES (24, 24, 'admin', '2020-11-05 17:57:19', 'admin', '2020-11-05 17:57:19');
-
-SET FOREIGN_KEY_CHECKS = 1;
