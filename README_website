@@ -3,9 +3,6 @@
 1. springboot 支持 jsp
     关键字: spring.mvc.view.prefix
 
-2. 解决: jsp页面无法访问
-    关键字: 内置tomcat的项目根目录
-
 3. 热部署
     关键字: devtools
 
@@ -14,12 +11,6 @@
 
 5. ajax
     关键字: 网络请求不成功
-
-6. SpringMVC 请求转发的三种方法
-    关键字: return "forward:; request.getRequestDispatcher
-
-7. SpringMVC 重定向
-    关键字: redirect:
 
 8. html与jsp区别
 
